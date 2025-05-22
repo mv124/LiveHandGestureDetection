@@ -1,13 +1,14 @@
-# Live Hand Object Detection
+# Live Hand Gesture Detection
 
-A real-time hand detection and tracking application using OpenCV and MediaPipe.
+A real-time hand gesture detection and recognition application using OpenCV and MediaPipe.
 
 ## Features
 
-- Real-time hand detection using webcam
-- Dynamic circle tracking around detected hands
-- Hand landmark visualization
+- Real-time hand detection and tracking using webcam
+- Hand landmark detection and visualization
+- Gesture recognition capabilities
 - Smooth tracking with high confidence thresholds
+- Real-time visualization of hand movements
 
 ## Requirements
 
@@ -20,8 +21,8 @@ A real-time hand detection and tracking application using OpenCV and MediaPipe.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/LiveObjectDetection.git
-cd LiveObjectDetection
+git clone https://github.com/yourusername/LiveHandGestureDetection.git
+cd LiveHandGestureDetection
 ```
 
 2. Create and activate virtual environment:
@@ -38,18 +39,19 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the hand detection script:
+Run the hand gesture detection script:
 ```bash
 python src/hand_detection.py
 ```
 
 - Press 'ESC' to exit the application
 - Make sure your webcam is properly connected and accessible
+- Position your hand clearly in front of the camera for optimal detection
 
 ## Project Structure
 
 ```
-LiveObjectDetection/
+LiveHandGestureDetection/
 ├── src/                    # Source code
 │   └── hand_detection.py   # Main application file
 ├── tests/                  # Test files
@@ -57,6 +59,13 @@ LiveObjectDetection/
 ├── .gitignore             # Git ignore file
 └── README.md              # Project documentation
 ```
+
+## Features in Detail
+
+- **Hand Detection**: Real-time detection of hands using MediaPipe's hand tracking solution
+- **Landmark Detection**: Detection of 21 hand landmarks for precise hand pose estimation
+- **Gesture Recognition**: Recognition of various hand gestures and poses
+- **Real-time Visualization**: Live display of hand tracking and gesture recognition results
 
 ## License
 
